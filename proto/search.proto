@@ -1,0 +1,26 @@
+syntax = "proto3";
+package evidence;
+
+message SearchRequest {
+  string query       = 1;
+  int32  num_results = 2;  // default 5
+  string filter      = 3;  // Milvus expr
+  int32  max_chars   = 4;  // default 300
+}
+
+message SearchHit {
+  int32  rank   = 1;
+  string doc_id = 2;
+  int32  page   = 3;
+  string text   = 4;
+  double score  = 5;
+}
+
+message SearchResponse {
+  repeated SearchHit hits      = 1;
+  double           latency_ms = 2;
+}
+
+service EvidenceSearch {
+  rpc Search(SearchRequest) returns (SearchResponse);
+}
