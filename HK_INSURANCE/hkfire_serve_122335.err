@@ -1,0 +1,46 @@
+(APIServer pid=2598531) [transformers] `Qwen2VLImageProcessorFast` is deprecated. The `Fast` suffix for image processors has been removed; use `Qwen2VLImageProcessor` instead.
+(APIServer pid=2598450) [transformers] `Qwen2VLImageProcessorFast` is deprecated. The `Fast` suffix for image processors has been removed; use `Qwen2VLImageProcessor` instead.
+(APIServer pid=2598531) [transformers] The `use_fast` parameter is deprecated and will be removed in a future version. Use `backend="torchvision"` instead of `use_fast=True`, or `backend="pil"` instead of `use_fast=False`.
+(APIServer pid=2598450) [transformers] The `use_fast` parameter is deprecated and will be removed in a future version. Use `backend="torchvision"` instead of `use_fast=True`, or `backend="pil"` instead of `use_fast=False`.
+(EngineCore pid=2603105) [transformers] `Qwen2VLImageProcessorFast` is deprecated. The `Fast` suffix for image processors has been removed; use `Qwen2VLImageProcessor` instead.
+(EngineCore pid=2603095) [transformers] `Qwen2VLImageProcessorFast` is deprecated. The `Fast` suffix for image processors has been removed; use `Qwen2VLImageProcessor` instead.
+(EngineCore pid=2603095) [transformers] The `use_fast` parameter is deprecated and will be removed in a future version. Use `backend="torchvision"` instead of `use_fast=True`, or `backend="pil"` instead of `use_fast=False`.
+(EngineCore pid=2603105) [transformers] The `use_fast` parameter is deprecated and will be removed in a future version. Use `backend="torchvision"` instead of `use_fast=True`, or `backend="pil"` instead of `use_fast=False`.
+(EngineCore pid=2603095) Loading safetensors checkpoint shards:   0% Completed | 0/3 [00:00<?, ?it/s]
+(EngineCore pid=2603105) Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
+(EngineCore pid=2603095) Loading safetensors checkpoint shards:  33% Completed | 1/3 [00:02<00:04,  2.25s/it]
+(EngineCore pid=2603105) Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:03<00:10,  3.47s/it]
+(EngineCore pid=2603095) Loading safetensors checkpoint shards:  67% Completed | 2/3 [00:05<00:03,  3.03s/it]
+(EngineCore pid=2603095) Loading safetensors checkpoint shards: 100% Completed | 3/3 [00:06<00:00,  1.78s/it]
+(EngineCore pid=2603095) Loading safetensors checkpoint shards: 100% Completed | 3/3 [00:06<00:00,  2.04s/it]
+(EngineCore pid=2603095) 
+(EngineCore pid=2603095) Loading safetensors checkpoint shards:   0% Completed | 0/3 [00:00<?, ?it/s]
+(EngineCore pid=2603105) Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:06<00:06,  3.46s/it]
+(EngineCore pid=2603095) Loading safetensors checkpoint shards:  67% Completed | 2/3 [00:01<00:00,  1.27it/s]
+(EngineCore pid=2603095) Loading safetensors checkpoint shards: 100% Completed | 3/3 [00:01<00:00,  1.67it/s]
+(EngineCore pid=2603095) Loading safetensors checkpoint shards: 100% Completed | 3/3 [00:01<00:00,  1.57it/s]
+(EngineCore pid=2603095) 
+(EngineCore pid=2603105) Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:09<00:03,  3.03s/it]
+(EngineCore pid=2603105) Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:12<00:00,  3.08s/it]
+(EngineCore pid=2603105) Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:12<00:00,  3.15s/it]
+(EngineCore pid=2603105) 
+(EngineCore pid=2603105) Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
+(EngineCore pid=2603105) Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:00<00:00,  3.36it/s]
+(EngineCore pid=2603105) Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.70it/s]
+(EngineCore pid=2603105) Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.91it/s]
+(EngineCore pid=2603105) 
+(EngineCore pid=2603095) 2026-05-26 06:31:25,131 - INFO - autotuner.py:457 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+(EngineCore pid=2603095) 2026-05-26 06:31:25,145 - INFO - autotuner.py:466 - flashinfer.jit: [Autotuner]: Autotuning process ends
+(EngineCore pid=2603095) Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   0%|          | 0/19 [00:00<?, ?it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  21%|██        | 4/19 [00:00<00:00, 32.52it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  42%|████▏     | 8/19 [00:00<00:00, 32.05it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  63%|██████▎   | 12/19 [00:00<00:00, 32.98it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  84%|████████▍ | 16/19 [00:00<00:00, 33.08it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 19/19 [00:00<00:00, 33.72it/s]
+(APIServer pid=2598531) INFO:     Started server process [2598531]
+(APIServer pid=2598531) INFO:     Waiting for application startup.
+(APIServer pid=2598531) INFO:     Application startup complete.
+(EngineCore pid=2603105) 2026-05-26 06:31:54,117 - INFO - autotuner.py:457 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+(EngineCore pid=2603105) 2026-05-26 06:31:54,795 - INFO - autotuner.py:466 - flashinfer.jit: [Autotuner]: Autotuning process ends
+(EngineCore pid=2603105) Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   0%|          | 0/11 [00:00<?, ?it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  18%|█▊        | 2/11 [00:00<00:00, 17.39it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  36%|███▋      | 4/11 [00:00<00:00, 17.05it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  55%|█████▍    | 6/11 [00:00<00:00, 17.85it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  82%|████████▏ | 9/11 [00:00<00:00, 19.11it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 11/11 [00:00<00:00, 18.83it/s]
+(APIServer pid=2598450) INFO:     Started server process [2598450]
+(APIServer pid=2598450) INFO:     Waiting for application startup.
+(APIServer pid=2598450) INFO:     Application startup complete.
+slurmstepd: error: *** JOB 122335 ON DGX-H100-9 CANCELLED AT 2026-06-04T04:30:58 ***
+(APIServer pid=2598450) INFO:     Shutting down
+(APIServer pid=2598531) INFO:     Shutting down

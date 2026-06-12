@@ -1,0 +1,68 @@
+/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py:31: DeprecationWarning: Importing from 'sentence_transformers.losses' is deprecated and will be removed in a future version. Please use 'sentence_transformers.sentence_transformer.losses' instead.
+  from sentence_transformers import SentenceTransformer, losses, evaluation
+/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py:31: DeprecationWarning: Importing from 'sentence_transformers.evaluation' is deprecated and will be removed in a future version. Please use 'sentence_transformers.sentence_transformer.evaluation' instead.
+  from sentence_transformers import SentenceTransformer, losses, evaluation
+/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py:32: DeprecationWarning: Importing from 'sentence_transformers.training_args' is deprecated and will be removed in a future version. Please use 'sentence_transformers.sentence_transformer.training_args' instead.
+  from sentence_transformers.training_args import SentenceTransformerTrainingArguments
+/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py:33: DeprecationWarning: Importing from 'sentence_transformers.trainer' is deprecated and will be removed in a future version. Please use 'sentence_transformers.sentence_transformer.trainer' instead.
+  from sentence_transformers.trainer import SentenceTransformerTrainer
+INFO:__main__:Device setup: device=cuda, cuda_available=True, gpu_count=1, bf16=True, fp16=False, local_rank=-1
+INFO:__main__:Running evaluation only...
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/modules.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/config_sentence_transformers.json "HTTP/1.1 200 OK"
+INFO:sentence_transformers.base.model:Loading SentenceTransformer model from dragonkue/BGE-m3-ko.
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/config_sentence_transformers.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/modules.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/sentence_bert_config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:  17%|█▋        | 68/391 [00:00<00:00, 643.10it/s]Loading weights:  34%|███▍      | 133/391 [00:00<00:00, 533.36it/s]Loading weights:  48%|████▊     | 188/391 [00:00<00:00, 497.29it/s]Loading weights:  61%|██████    | 239/391 [00:00<00:00, 459.65it/s]Loading weights:  74%|███████▎  | 288/391 [00:00<00:00, 458.84it/s]Loading weights:  86%|████████▌ | 335/391 [00:00<00:00, 449.49it/s]Loading weights:  98%|█████████▊| 382/391 [00:00<00:00, 445.43it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 479.52it/s]
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/tokenizer_config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/tokenizer_config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/dragonkue/BGE-m3-ko/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/dragonkue/BGE-m3-ko/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/dragonkue/BGE-m3-ko "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/dragonkue/BGE-m3-ko "HTTP/1.1 200 OK"
+INFO:__main__:Set SentenceTransformer max_seq_length=512
+INFO:__main__:Benchmarking bge model: dragonkue/BGE-m3-ko
+INFO:__main__:Evaluating bge model with 2000 documents
+INFO:__main__:Encoding 2742 documents...
+INFO:__main__:Realistic evaluation results: {'corpus_size': 2742, 'queries_evaluated': 1926, 'top1_accuracy': 0.0, 'top5_accuracy': 0.32398753894080995, 'top10_accuracy': 0.44963655244029077, 'mean_reciprocal_rank': 0.09496523544249001, 'avg_positive_similarity': 0.3844238009655835}
+INFO:__main__:Evaluation results saved to /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/output/base_bge_eval/eval_results_bge.json
+
+============================================================
+Model: dragonkue/BGE-m3-ko (bge)
+Evaluation: Realistic
+Corpus Size: 2742
+Queries Evaluated: 1926
+Average Positive Similarity: 0.3844238009655835
+Top-1 Accuracy: 0.0
+Top-5 Accuracy: 0.32398753894080995
+Top-10 Accuracy: 0.44963655244029077
+Mean Reciprocal Rank: 0.09496523544249001
+============================================================
+

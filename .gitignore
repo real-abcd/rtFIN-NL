@@ -1,0 +1,53 @@
+
+# 특정 확장자를 가진 모든 파일 무시 (가장 추천)
+	##*.safetensors
+	##*.ckpt
+	##*.pt
+
+# 대용량 모델이 들어있는 특정 폴더 전체를 무시하고 싶을 때
+	##models/
+	##weights/
+
+# 하위 폴더 깊숙이 있는 특정 파일 딱 하나만 무시하고 싶을 때
+	##/src/checkpoints/my_model.safetensors
+
+
+# downloaded model file
+
+gemma31/
+
+# virtual environment setting 
+venv/
+.venv/
+# train data
+*.jsonl
+
+# model benchmark testbed folder files ( final result will be uploaded on huggingface)
+benchmark_results/
+output/
+
+# model weight file (too big, upload on huggingface-hub or save it on lakefs)
+
+*.safetensors
+*.pth
+*.pt
+*.ckpt
+*.bin
+# unneccesary logs file
+
+.err
+.out
+.log
+
+# compressed file(copied) for file transfer
+*.tar
+*.tar.gz
+*.zip
+
+# __pycache
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,13 @@
+Loading weights: 100%|██████████| 391/391 [00:00<00:00, 9245.43it/s]
+/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/benchmark_korean_embeddings.py:155: DeprecationWarning: MTEB is deprecated and will be removed in future versions. Please use the `mteb.evaluate` function instead.
+  evaluator = MTEB(tasks=tasks)
+/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/mteb/models/model_meta.py:764: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  embedding_dimensions = model.get_sentence_embedding_dimension()
+/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/mteb/models/model_meta.py:726: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  embed_dim=model.get_sentence_embedding_dimension(),
+─────────────────────────────── Selected tasks  ────────────────────────────────
+Retrieval
+    - MIRACLRetrieval, t2t, multilingual 1 / 18 Subsets
+
+
+[TaskResult(task_name=MIRACLRetrieval, main_score=0.50, scores=..., ...)]

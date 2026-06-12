@@ -1,0 +1,434 @@
+_wandb:
+    value:
+        cli_version: 0.25.1
+        e:
+            141sfqnmcjoygqadlucjzsxxqco77kdi:
+                args:
+                    - --model_type
+                    - bge
+                    - --model_name
+                    - dragonkue/BGE-m3-ko
+                    - --train_data
+                    - /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/output/111677_20260506_114341_both_2gpu/data/train_bge_m3.h100_train.jsonl
+                    - --eval_data
+                    - /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/output/111677_20260506_114341_both_2gpu/data/train_bge_m3.h100_eval.jsonl
+                    - --output_dir
+                    - /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/output/111677_20260506_114341_both_2gpu/bge
+                    - --batch_size
+                    - "16"
+                    - --num_epochs
+                    - "3"
+                    - --learning_rate
+                    - "2e-5"
+                    - --warmup_ratio
+                    - "0.1"
+                    - --weight_decay
+                    - "0.01"
+                    - --gradient_accumulation_steps
+                    - "2"
+                    - --bf16
+                    - --use_wandb
+                    - --wandb_project
+                    - rtfin_embedding_h100
+                    - --wandb_run_name
+                    - h100_bge_111677_20260506_114341_both_2gpu
+                    - --save_steps
+                    - "1000"
+                    - --save_total_limit
+                    - "3"
+                    - --logging_steps
+                    - "50"
+                    - --benchmark
+                    - --eval_samples
+                    - "2000"
+                    - --realistic_eval
+                    - --max_seq_length
+                    - "512"
+                codePath: train_embedding.py
+                codePathLocal: train_embedding.py
+                cpu_count: 112
+                cpu_count_logical: 224
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "1888425144320"
+                        used: "685009354752"
+                email: xianxie31@korea.ac.kr
+                executable: /usr/bin/python3
+                gpu: NVIDIA H100 80GB HBM3
+                gpu_count: 2
+                gpu_nvidia:
+                    - architecture: Hopper
+                      cudaCores: 16896
+                      memoryTotal: "85520809984"
+                      name: NVIDIA H100 80GB HBM3
+                      uuid: GPU-b8b72eb7-4b16-5906-e91e-c9498c344ceb
+                    - architecture: Hopper
+                      cudaCores: 16896
+                      memoryTotal: "85520809984"
+                      name: NVIDIA H100 80GB HBM3
+                      uuid: GPU-1a2de8d2-7bc1-cb10-a5bd-eb2cef99650c
+                host: DGX-H100-12
+                memory:
+                    total: "2164193984512"
+                os: Linux-5.15.0-1091-nvidia-x86_64-with-glibc2.35
+                program: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py
+                python: CPython 3.10.12
+                root: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning
+                slurm:
+                    cluster_name: deepops
+                    conf: /etc/slurm/slurm.conf
+                    cpus_on_node: "32"
+                    cpus_per_task: "32"
+                    gpus_on_node: "2"
+                    gtids: "0"
+                    job_account: idle_gpu
+                    job_cpus_per_node: "32"
+                    job_end_time: "1778294621"
+                    job_gid: "1061"
+                    job_gpus: 0,1
+                    job_id: "111677"
+                    job_name: rtfin_embed_h100
+                    job_nodelist: DGX-H100-12
+                    job_num_nodes: "1"
+                    job_partition: h100
+                    job_qos: normal
+                    job_start_time: "1778035421"
+                    job_uid: "1061"
+                    job_user: hsypfsv
+                    jobid: "111677"
+                    localid: "0"
+                    mem_per_node: "524288"
+                    nnodes: "1"
+                    node_aliases: (null)
+                    nodeid: "0"
+                    nodelist: DGX-H100-12
+                    ntasks_per_node: "1"
+                    prio_process: "0"
+                    procid: "0"
+                    submit_dir: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm
+                    submit_host: login-1
+                    task_pid: "2631588"
+                    tasks_per_node: "1"
+                    topology_addr: DGX-H100-12
+                    topology_addr_pattern: node
+                    working_cluster: deepops:login-1:6717:9984:109
+                startedAt: "2026-05-06T02:44:03.547837Z"
+                writerId: 141sfqnmcjoygqadlucjzsxxqco77kdi
+        m:
+            - "1": train/global_step
+              "6":
+                - 3
+              "7": []
+            - "2": '*'
+              "5": 1
+              "6":
+                - 1
+              "7": []
+        python_version: 3.10.12
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 51
+                - 53
+                - 71
+                - 75
+                - 98
+                - 105
+            "2":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 51
+                - 53
+                - 71
+                - 75
+                - 98
+                - 105
+            "3":
+                - 2
+                - 7
+                - 13
+                - 16
+                - 62
+                - 66
+            "4": 3.10.12
+            "5": 0.25.1
+            "6": 5.8.0
+            "9":
+                "1": transformers_trainer
+            "12": 0.25.1
+            "13": linux-x86_64
+accelerator_config:
+    value:
+        dispatch_batches: null
+        even_batches: true
+        gradient_accumulation_kwargs: null
+        non_blocking: false
+        split_batches: false
+        use_seedable_sampler: true
+adam_beta1:
+    value: 0.9
+adam_beta2:
+    value: 0.999
+adam_epsilon:
+    value: 1e-08
+auto_find_batch_size:
+    value: false
+average_tokens_across_devices:
+    value: true
+batch_eval_metrics:
+    value: false
+batch_sampler:
+    value: batch_sampler
+batch_size:
+    value: 16
+bf16:
+    value: true
+bf16_full_eval:
+    value: false
+data_seed:
+    value: null
+dataloader_drop_last:
+    value: true
+dataloader_num_workers:
+    value: 4
+dataloader_persistent_workers:
+    value: false
+dataloader_pin_memory:
+    value: true
+dataloader_prefetch_factor:
+    value: null
+ddp_backend:
+    value: null
+ddp_broadcast_buffers:
+    value: false
+ddp_bucket_cap_mb:
+    value: null
+ddp_find_unused_parameters:
+    value: null
+ddp_static_graph:
+    value: null
+ddp_timeout:
+    value: 1800
+debug:
+    value: []
+deepspeed:
+    value: null
+device:
+    value: cuda:0
+disable_tqdm:
+    value: false
+do_eval:
+    value: false
+do_predict:
+    value: false
+do_train:
+    value: false
+empty_cache_steps:
+    value: 0
+enable_jit_checkpoint:
+    value: false
+eval_accumulation_steps:
+    value: null
+eval_data:
+    value: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/output/111677_20260506_114341_both_2gpu/data/train_bge_m3.h100_eval.jsonl
+eval_delay:
+    value: 0
+eval_do_concat_batches:
+    value: true
+eval_on_start:
+    value: false
+eval_samples:
+    value: 2000
+eval_steps:
+    value: 500
+eval_strategy:
+    value: "no"
+eval_use_gather_object:
+    value: false
+fp16:
+    value: false
+fp16_full_eval:
+    value: false
+fsdp:
+    value: []
+fsdp_config:
+    value:
+        min_num_params: 0
+        xla: false
+        xla_fsdp_grad_ckpt: false
+        xla_fsdp_v2: false
+full_determinism:
+    value: false
+gradient_accumulation_steps:
+    value: 2
+gradient_checkpointing:
+    value: false
+gradient_checkpointing_kwargs:
+    value: null
+greater_is_better:
+    value: true
+hub_always_push:
+    value: false
+hub_model_id:
+    value: null
+hub_private_repo:
+    value: null
+hub_revision:
+    value: null
+hub_strategy:
+    value: every_save
+hub_token:
+    value: <HUB_TOKEN>
+ignore_data_skip:
+    value: false
+include_for_metrics:
+    value: []
+include_num_input_tokens_seen:
+    value: "no"
+label_names:
+    value: null
+label_smoothing_factor:
+    value: 0
+learning_rate:
+    value: 2e-05
+length_column_name:
+    value: length
+liger_kernel_config:
+    value: null
+load_best_model_at_end:
+    value: false
+local_rank:
+    value: -1
+log_level:
+    value: passive
+log_level_replica:
+    value: warning
+log_on_each_node:
+    value: true
+logging_dir:
+    value: null
+logging_first_step:
+    value: false
+logging_nan_inf_filter:
+    value: true
+logging_steps:
+    value: 50
+logging_strategy:
+    value: steps
+lr_scheduler_kwargs:
+    value: null
+lr_scheduler_type:
+    value: linear
+max_grad_norm:
+    value: 1
+max_seq_length:
+    value: 512
+max_steps:
+    value: -1
+metric_for_best_model:
+    value: null
+model_name:
+    value: dragonkue/BGE-m3-ko
+model_type:
+    value: bge
+multi_dataset_batch_sampler:
+    value: proportional
+neftune_noise_alpha:
+    value: null
+num_epochs:
+    value: 3
+num_train_epochs:
+    value: 3
+optim:
+    value: adamw_torch
+optim_args:
+    value: null
+optim_target_modules:
+    value: null
+output_dir:
+    value: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/output/111677_20260506_114341_both_2gpu/bge
+parallelism_config:
+    value: null
+per_device_eval_batch_size:
+    value: 16
+per_device_train_batch_size:
+    value: 16
+prediction_loss_only:
+    value: true
+project:
+    value: huggingface
+prompts:
+    value: null
+push_to_hub:
+    value: false
+realistic_eval:
+    value: true
+remove_unused_columns:
+    value: false
+report_to:
+    value:
+        - wandb
+restore_callback_states_from_checkpoint:
+    value: false
+resume_from_checkpoint:
+    value: null
+run_name:
+    value: h100_bge_111677_20260506_114341_both_2gpu
+save_on_each_node:
+    value: false
+save_only_model:
+    value: false
+save_steps:
+    value: 1000
+save_strategy:
+    value: steps
+save_total_limit:
+    value: 3
+seed:
+    value: 42
+skip_memory_metrics:
+    value: true
+tf32:
+    value: null
+torch_compile:
+    value: false
+torch_compile_backend:
+    value: null
+torch_compile_mode:
+    value: null
+torch_empty_cache_steps:
+    value: null
+trackio_bucket_id:
+    value: null
+trackio_space_id:
+    value: null
+trackio_static_space_id:
+    value: null
+train_data:
+    value: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/output/111677_20260506_114341_both_2gpu/data/train_bge_m3.h100_train.jsonl
+train_sampling_strategy:
+    value: random
+use_cache:
+    value: false
+use_cpu:
+    value: false
+use_liger_kernel:
+    value: false
+wandb_project:
+    value: rtfin_embedding_h100
+wandb_run_name:
+    value: h100_bge_111677_20260506_114341_both_2gpu
+warmup_ratio:
+    value: null
+warmup_steps:
+    value: 0.1
+weight_decay:
+    value: 0.01

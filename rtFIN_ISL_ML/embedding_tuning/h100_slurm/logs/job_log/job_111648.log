@@ -1,0 +1,30 @@
+exists: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/source_data/train_bge_m3.jsonl
+exists: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/source_data/train_qwen3.jsonl
+============================================================
+H100 embedding training
+Script dir: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm
+Project dir: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning
+Data source dir: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/source_data
+Run dir: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/output/111648_20260506_015109_both_2gpu
+Model suite: both
+GPU count: 2
+Python: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/bin/python
+Docker image: <none>
+Start: Wed May  6 01:51:09 UTC 2026
+============================================================
+index, name, memory.total [MiB]
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/source_data/train_bge_m3.jsonl: train=47345, eval=5275
+/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/source_data/train_qwen3.jsonl: train=47345, eval=5275
+============================================================
+Training BGE: dragonkue/BGE-m3-ko
+============================================================
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 187, in _run_module_as_main
+    mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+  File "/usr/lib/python3.10/runpy.py", line 110, in _get_module_details
+    __import__(pkg_name)
+  File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/lib/python3.10/site-packages/torch/__init__.py", line 34, in <module>
+    from typing_extensions import ParamSpec as _ParamSpec, TypeIs as _TypeIs
+ModuleNotFoundError: No module named 'typing_extensions'

@@ -1,0 +1,133 @@
+HOSTNAME=DGX-H100-12
+ALLOCATED_GPU=0
+load_image
+Loaded image: vllm/vllm-openai:v0.21.0
+compose up
+docks ps
+CONTAINER ID   IMAGE                                            COMMAND                  CREATED         STATUS                 PORTS                                           NAMES
+8c1d352f526d   vllm/vllm-openai:v0.21.0                         "vllm serve --model …"   2 seconds ago   Up 1 second            0.0.0.0:14959->14959/tcp, :::14959->14959/tcp   gemma31_fp8
+772c8a3f28ec   docker-pri.maum.ai:443/worv/sudo-audit-monitor   "python slack_sudo_a…"   3 weeks ago     Up 3 weeks                                                             sudo-audit
+74c337e6e3f9   docker-pri.maum.ai:443/worv/sketchdrive:1.0.9    "/ros_entrypoint.sh …"   2 months ago    Up 3 weeks                                                             temp3mnt
+03a85547f073   prometheuscommunity/smartctl-exporter:latest     "/bin/smartctl_expor…"   7 months ago    Up 3 weeks                                                             smartctl-exporter
+646aa4fcb558   gcr.io/cadvisor/cadvisor:latest                  "/usr/bin/cadvisor -…"   7 months ago    Up 3 weeks (healthy)                                                   cadvisor
+01e1f2d1137c   quay.io/prometheus/node-exporter:latest          "/bin/node_exporter …"   7 months ago    Up 3 weeks                                                             node-exporter
+sleep 30
+WARNING 06-11 05:04:06 [argparse_utils.py:257] With `vllm serve`, you should provide the model as a positional argument or in a config file instead of via the `--model` option. The `--model` option will be removed in a future version.
+(APIServer pid=1) INFO 06-11 05:04:06 [utils.py:306] 
+(APIServer pid=1) INFO 06-11 05:04:06 [utils.py:306]        █     █     █▄   ▄█
+(APIServer pid=1) INFO 06-11 05:04:06 [utils.py:306]  ▄▄ ▄█ █     █     █ ▀▄▀ █  version 0.21.0
+(APIServer pid=1) INFO 06-11 05:04:06 [utils.py:306]   █▄█▀ █     █     █     █  model   /model
+(APIServer pid=1) INFO 06-11 05:04:06 [utils.py:306]    ▀▀  ▀▀▀▀▀ ▀▀▀▀▀ ▀     ▀
+(APIServer pid=1) INFO 06-11 05:04:06 [utils.py:306] 
+(APIServer pid=1) INFO 06-11 05:04:06 [utils.py:240] non-default args: {'model_tag': '/model', 'port': 14959, 'model': '/model', 'trust_remote_code': True, 'max_model_len': 8192, 'gpu_memory_utilization': 0.85, 'kv_cache_dtype': 'turboquant_4bit_nc', 'max_num_seqs': 4}
+(APIServer pid=1) WARNING 06-11 05:04:06 [envs.py:1866] Unknown vLLM environment variable detected: VLLM_BUILD_COMMIT
+(APIServer pid=1) WARNING 06-11 05:04:06 [envs.py:1866] Unknown vLLM environment variable detected: VLLM_BUILD_PIPELINE
+(APIServer pid=1) WARNING 06-11 05:04:06 [envs.py:1866] Unknown vLLM environment variable detected: VLLM_BUILD_URL
+(APIServer pid=1) WARNING 06-11 05:04:06 [envs.py:1866] Unknown vLLM environment variable detected: VLLM_IMAGE_TAG
+(APIServer pid=1) INFO 06-11 05:04:15 [model.py:568] Resolved architecture: Gemma4ForConditionalGeneration
+(APIServer pid=1) INFO 06-11 05:04:15 [model.py:1697] Using max model len 8192
+(APIServer pid=1) INFO 06-11 05:04:15 [scheduler.py:239] Chunked prefill is enabled with max_num_batched_tokens=8192.
+(APIServer pid=1) WARNING 06-11 05:04:15 [arg_utils.py:2047] TurboQuant is not yet compatible with FlashAttention >= 3. Overriding flash_attn_version to 2. To silence this warning, pass --attention-config.flash_attn_version=2
+(APIServer pid=1) INFO 06-11 05:04:15 [config.py:101] Gemma4 model has heterogeneous head dimensions (head_dim=256, global_head_dim=512). Forcing TRITON_ATTN backend to prevent mixed-backend numerical divergence.
+(APIServer pid=1) INFO 06-11 05:04:15 [vllm.py:886] Asynchronous scheduling is enabled.
+(APIServer pid=1) INFO 06-11 05:04:15 [kernel.py:212] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+(APIServer pid=1) WARNING 06-11 05:04:15 [cuda.py:237] Forcing --disable_chunked_mm_input for models with multimodal-bidirectional attention.
+(EngineCore pid=490) INFO 06-11 05:04:25 [core.py:109] Initializing a V1 LLM engine (v0.21.0) with config: model='/model', speculative_config=None, tokenizer='/model', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=False, enable_return_routed_experts=False, kv_cache_dtype=turboquant_4bit_nc, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False), seed=0, served_model_name=/model, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.VLLM_COMPILE: 3>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['none'], 'ir_enable_torch_wrap': True, 'splitting_ops': ['vllm::unified_attention_with_output', 'vllm::unified_mla_attention_with_output', 'vllm::mamba_mixer2', 'vllm::mamba_mixer', 'vllm::short_conv', 'vllm::linear_attention', 'vllm::plamo2_mamba_mixer', 'vllm::gdn_attention_core', 'vllm::gdn_attention_core_xpu', 'vllm::olmo_hybrid_gdn_full_forward', 'vllm::kda_attention', 'vllm::sparse_attn_indexer', 'vllm::rocm_aiter_sparse_attn_indexer', 'vllm::deepseek_v4_attention', 'vllm::unified_kv_cache_update', 'vllm::unified_mla_kv_cache_update'], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [8192], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'size_asserts': False, 'alignment_asserts': False, 'scalar_asserts': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.FULL_AND_PIECEWISE: (2, 1)>, 'cudagraph_num_of_warmups': 1, 'cudagraph_capture_sizes': [1, 2, 4, 8], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': False, 'fuse_act_quant': False, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'fuse_act_padding': False}, 'max_cudagraph_capture_size': 8, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native']), enable_flashinfer_autotune=False, moe_backend='auto')
+(EngineCore pid=490) INFO 06-11 05:04:28 [parallel_state.py:1410] world_size=1 rank=0 local_rank=0 distributed_init_method=tcp://172.22.0.2:47943 backend=nccl
+(EngineCore pid=490) INFO 06-11 05:04:28 [parallel_state.py:1723] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=490) INFO 06-11 05:04:29 [topk_topp_sampler.py:45] Using FlashInfer for top-p & top-k sampling.
+(EngineCore pid=490) INFO 06-11 05:04:29 [gpu_model_runner.py:4857] Starting to load model /model...
+(EngineCore pid=490) INFO 06-11 05:04:30 [vllm.py:886] Asynchronous scheduling is enabled.
+(EngineCore pid=490) INFO 06-11 05:04:30 [kernel.py:212] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+(EngineCore pid=490) INFO 06-11 05:04:30 [cuda.py:312] Using AttentionBackendEnum.TRITON_ATTN backend.
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140] EngineCore failed to start.
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140] Traceback (most recent call last):
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 1114, in run_engine_core
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     engine_core = EngineCoreProc(*args, engine_index=dp_rank, **kwargs)
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     return func(*args, **kwargs)
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 880, in __init__
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     super().__init__(
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 118, in __init__
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     self.model_executor = executor_class(vllm_config)
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     return func(*args, **kwargs)
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/executor/abstract.py", line 109, in __init__
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     self._init_executor()
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/executor/uniproc_executor.py", line 65, in _init_executor
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     self.driver_worker.load_model()
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/worker/gpu_worker.py", line 345, in load_model
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     self.model_runner.load_model(load_dummy_weights=load_dummy_weights)
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     return func(*args, **kwargs)
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/worker/gpu_model_runner.py", line 4873, in load_model
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     self.model = model_loader.load_model(
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]                  ^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     return func(*args, **kwargs)
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/model_loader/base_loader.py", line 55, in load_model
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     model = initialize_model(
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]             ^^^^^^^^^^^^^^^^^
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     return func(*args, **kwargs)
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/model_loader/utils.py", line 61, in initialize_model
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     model = model_class(vllm_config=vllm_config, prefix=prefix)
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/gemma4_mm.py", line 982, in __init__
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     self.language_model: Gemma4ForCausalLM = init_vllm_registered_model(
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 379, in init_vllm_registered_model
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     return initialize_model(vllm_config=vllm_config, prefix=prefix)
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     return func(*args, **kwargs)
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/model_loader/utils.py", line 61, in initialize_model
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     model = model_class(vllm_config=vllm_config, prefix=prefix)
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/gemma4.py", line 1544, in __init__
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     self.model = Gemma4Model(
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]                  ^^^^^^^^^^^^
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/compilation/decorators.py", line 383, in __init__
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     old_init(self, *args, **kwargs)
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/gemma4.py", line 1038, in __init__
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     self.start_layer, self.end_layer, self.layers = make_layers(
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]                                                     ^^^^^^^^^^^^
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 646, in make_layers
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     + get_offloader().wrap_modules(
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/offloader/base.py", line 104, in wrap_modules
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     return list(modules_generator)
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]            ^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 647, in <genexpr>
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     layer_fn(prefix=f"{prefix}.{idx}") for idx in range(start_layer, end_layer)
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/gemma4.py", line 1040, in <lambda>
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     lambda prefix: Gemma4DecoderLayer(
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]                    ^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/gemma4.py", line 579, in __init__
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     self.self_attn = Gemma4Attention(
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]                      ^^^^^^^^^^^^^^^^
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/gemma4.py", line 489, in __init__
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     self.attn = Attention(
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]                 ^^^^^^^^^^
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/attention/attention.py", line 299, in __init__
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     self.attn_backend = get_attn_backend(
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]                         ^^^^^^^^^^^^^^^^^
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/attention/selector.py", line 98, in get_attn_backend
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     return _cached_get_attn_backend(
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]            ^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/attention/selector.py", line 113, in _cached_get_attn_backend
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     attention_cls = current_platform.get_attn_backend_cls(
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]   File "/usr/local/lib/python3.12/dist-packages/vllm/platforms/cuda.py", line 307, in get_attn_backend_cls
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140]     raise ValueError(
+(EngineCore pid=490) ERROR 06-11 05:04:30 [core.py:1140] ValueError: Selected backend AttentionBackendEnum.TRITON_ATTN is not valid for this configuration. Reason: ['kv_cache_dtype not supported']
+Container stopped. Exiting job.

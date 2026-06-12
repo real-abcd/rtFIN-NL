@@ -1,0 +1,224 @@
+Requirement already satisfied: pip in ./venv/lib/python3.10/site-packages (22.0.2)
+Collecting pip
+  Downloading pip-26.1.1-py3-none-any.whl (1.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 23.2 MB/s eta 0:00:00
+Requirement already satisfied: setuptools in ./venv/lib/python3.10/site-packages (59.6.0)
+Collecting setuptools
+  Downloading setuptools-82.0.1-py3-none-any.whl (1.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 33.7 MB/s eta 0:00:00
+Requirement already satisfied: wheel in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (0.46.3)
+Collecting wheel
+  Downloading wheel-0.47.0-py3-none-any.whl (32 kB)
+Requirement already satisfied: packaging>=24.0 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from wheel) (26.0)
+Installing collected packages: wheel, setuptools, pip
+  Attempting uninstall: wheel
+    Found existing installation: wheel 0.46.3
+    Not uninstalling wheel at /mnt/home/hsypfsv/.local/lib/python3.10/site-packages, outside environment /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv
+    Can't uninstall 'wheel'. No files were found to uninstall.
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 59.6.0
+    Uninstalling setuptools-59.6.0:
+      Successfully uninstalled setuptools-59.6.0
+  Attempting uninstall: pip
+    Found existing installation: pip 22.0.2
+    Uninstalling pip-22.0.2:
+      Successfully uninstalled pip-22.0.2
+Successfully installed pip-26.1.1 setuptools-82.0.1 wheel-0.47.0
+Requirement already satisfied: accelerate in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (1.0.1)
+Collecting accelerate
+  Downloading accelerate-1.13.0-py3-none-any.whl.metadata (19 kB)
+Requirement already satisfied: datasets in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (3.1.0)
+Collecting datasets
+  Downloading datasets-4.8.5-py3-none-any.whl.metadata (19 kB)
+Collecting evaluate
+  Downloading evaluate-0.4.6-py3-none-any.whl.metadata (9.5 kB)
+Requirement already satisfied: huggingface_hub in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (0.36.2)
+Collecting huggingface_hub
+  Downloading huggingface_hub-1.13.0-py3-none-any.whl.metadata (14 kB)
+Requirement already satisfied: peft in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (0.12.0)
+Collecting peft
+  Downloading peft-0.19.1-py3-none-any.whl.metadata (15 kB)
+Collecting sentence-transformers
+  Downloading sentence_transformers-5.4.1-py3-none-any.whl.metadata (17 kB)
+Collecting scikit-learn
+  Downloading scikit_learn-1.7.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (11 kB)
+Requirement already satisfied: transformers in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (4.46.1)
+Collecting transformers
+  Downloading transformers-5.8.0-py3-none-any.whl.metadata (33 kB)
+Requirement already satisfied: wandb in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (0.25.1)
+Collecting wandb
+  Downloading wandb-0.26.1-py3-none-manylinux_2_28_x86_64.whl.metadata (11 kB)
+Requirement already satisfied: numpy>=1.17 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from accelerate) (1.26.4)
+Requirement already satisfied: packaging>=20.0 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from accelerate) (26.0)
+Requirement already satisfied: psutil in /usr/lib/python3/dist-packages (from accelerate) (5.9.0)
+Requirement already satisfied: pyyaml in /usr/lib/python3/dist-packages (from accelerate) (5.4.1)
+Requirement already satisfied: torch>=2.0.0 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from accelerate) (2.10.0)
+Requirement already satisfied: safetensors>=0.4.3 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from accelerate) (0.7.0)
+Requirement already satisfied: filelock in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from datasets) (3.25.2)
+Requirement already satisfied: pyarrow>=21.0.0 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from datasets) (23.0.1)
+Requirement already satisfied: dill<0.4.2,>=0.3.0 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from datasets) (0.3.8)
+Requirement already satisfied: pandas in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from datasets) (2.3.3)
+Requirement already satisfied: requests>=2.32.2 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from datasets) (2.32.5)
+Requirement already satisfied: httpx<1.0.0 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from datasets) (0.28.1)
+Requirement already satisfied: tqdm>=4.66.3 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from datasets) (4.67.3)
+Requirement already satisfied: xxhash in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from datasets) (3.6.0)
+Requirement already satisfied: multiprocess<0.70.20 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from datasets) (0.70.16)
+Requirement already satisfied: fsspec<=2026.2.0,>=2023.1.0 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from fsspec[http]<=2026.2.0,>=2023.1.0->datasets) (2024.9.0)
+Collecting hf-xet<2.0.0,>=1.4.3 (from huggingface_hub)
+  Downloading hf_xet-1.4.3-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (4.9 kB)
+Requirement already satisfied: typer in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from huggingface_hub) (0.24.1)
+Requirement already satisfied: typing-extensions>=4.1.0 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from huggingface_hub) (4.15.0)
+Requirement already satisfied: aiohttp!=4.0.0a0,!=4.0.0a1 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from fsspec[http]<=2026.2.0,>=2023.1.0->datasets) (3.13.3)
+Requirement already satisfied: anyio in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from httpx<1.0.0->datasets) (4.12.1)
+Requirement already satisfied: certifi in /usr/lib/python3/dist-packages (from httpx<1.0.0->datasets) (2020.6.20)
+Requirement already satisfied: httpcore==1.* in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from httpx<1.0.0->datasets) (1.0.9)
+Requirement already satisfied: idna in /usr/lib/python3/dist-packages (from httpx<1.0.0->datasets) (3.3)
+Requirement already satisfied: h11>=0.16 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from httpcore==1.*->httpx<1.0.0->datasets) (0.16.0)
+Requirement already satisfied: scipy>=1.0.0 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from sentence-transformers) (1.15.3)
+Requirement already satisfied: regex>=2025.10.22 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from transformers) (2026.2.28)
+Collecting tokenizers<=0.23.0,>=0.22.0 (from transformers)
+  Downloading tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.3 kB)
+Collecting joblib>=1.2.0 (from scikit-learn)
+  Downloading joblib-1.5.3-py3-none-any.whl.metadata (5.5 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+Requirement already satisfied: click>=8.0.1 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from wandb) (8.3.1)
+Requirement already satisfied: gitpython!=3.1.29,>=1.0.0 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from wandb) (3.1.46)
+Requirement already satisfied: platformdirs in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from wandb) (4.9.4)
+Requirement already satisfied: protobuf!=5.28.0,!=5.29.0,<8,>4.21.0 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from wandb) (6.33.5)
+Requirement already satisfied: pydantic<3 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from wandb) (2.12.5)
+Requirement already satisfied: sentry-sdk>=2.0.0 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from wandb) (2.54.0)
+Requirement already satisfied: annotated-types>=0.6.0 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from pydantic<3->wandb) (0.7.0)
+Requirement already satisfied: pydantic-core==2.41.5 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from pydantic<3->wandb) (2.41.5)
+Requirement already satisfied: typing-inspection>=0.4.2 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from pydantic<3->wandb) (0.4.2)
+Requirement already satisfied: charset_normalizer<4,>=2 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from requests>=2.32.2->datasets) (3.4.6)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from requests>=2.32.2->datasets) (2.6.3)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets) (2.6.1)
+Requirement already satisfied: aiosignal>=1.4.0 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets) (1.4.0)
+Requirement already satisfied: async-timeout<6.0,>=4.0 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets) (5.0.1)
+Requirement already satisfied: attrs>=17.3.0 in /usr/lib/python3/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets) (21.2.0)
+Requirement already satisfied: frozenlist>=1.1.1 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets) (1.8.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets) (6.7.1)
+Requirement already satisfied: propcache>=0.2.0 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets) (0.4.1)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets) (1.23.0)
+Requirement already satisfied: gitdb<5,>=4.0.1 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from gitpython!=3.1.29,>=1.0.0->wandb) (4.0.12)
+Requirement already satisfied: smmap<6,>=3.0.1 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from gitdb<5,>=4.0.1->gitpython!=3.1.29,>=1.0.0->wandb) (5.0.3)
+Requirement already satisfied: sympy>=1.13.3 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (1.14.0)
+Requirement already satisfied: networkx>=2.5.1 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (3.4.2)
+Requirement already satisfied: jinja2 in /usr/lib/python3/dist-packages (from torch>=2.0.0->accelerate) (3.0.3)
+Requirement already satisfied: cuda-bindings==12.9.4 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (12.9.4)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.8.93 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (12.8.93)
+Requirement already satisfied: nvidia-cuda-runtime-cu12==12.8.90 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (12.8.90)
+Requirement already satisfied: nvidia-cuda-cupti-cu12==12.8.90 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (12.8.90)
+Requirement already satisfied: nvidia-cudnn-cu12==9.10.2.21 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (9.10.2.21)
+Requirement already satisfied: nvidia-cublas-cu12==12.8.4.1 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (12.8.4.1)
+Requirement already satisfied: nvidia-cufft-cu12==11.3.3.83 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (11.3.3.83)
+Requirement already satisfied: nvidia-curand-cu12==10.3.9.90 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (10.3.9.90)
+Requirement already satisfied: nvidia-cusolver-cu12==11.7.3.90 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (11.7.3.90)
+Requirement already satisfied: nvidia-cusparse-cu12==12.5.8.93 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (12.5.8.93)
+Requirement already satisfied: nvidia-cusparselt-cu12==0.7.1 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (0.7.1)
+Requirement already satisfied: nvidia-nccl-cu12==2.27.5 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (2.27.5)
+Requirement already satisfied: nvidia-nvshmem-cu12==3.4.5 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (3.4.5)
+Requirement already satisfied: nvidia-nvtx-cu12==12.8.90 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (12.8.90)
+Requirement already satisfied: nvidia-nvjitlink-cu12==12.8.93 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (12.8.93)
+Requirement already satisfied: nvidia-cufile-cu12==1.13.1.3 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (1.13.1.3)
+Requirement already satisfied: triton==3.6.0 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (3.6.0)
+Requirement already satisfied: cuda-pathfinder~=1.1 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from cuda-bindings==12.9.4->torch>=2.0.0->accelerate) (1.4.3)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from sympy>=1.13.3->torch>=2.0.0->accelerate) (1.3.0)
+Requirement already satisfied: exceptiongroup>=1.0.2 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from anyio->httpx<1.0.0->datasets) (1.3.1)
+Requirement already satisfied: python-dateutil>=2.8.2 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from pandas->datasets) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in /usr/lib/python3/dist-packages (from pandas->datasets) (2022.1)
+Requirement already satisfied: tzdata>=2022.7 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from pandas->datasets) (2025.3)
+Requirement already satisfied: six>=1.5 in /usr/lib/python3/dist-packages (from python-dateutil>=2.8.2->pandas->datasets) (1.16.0)
+Requirement already satisfied: shellingham>=1.3.0 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from typer->huggingface_hub) (1.5.4)
+Requirement already satisfied: rich>=12.3.0 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from typer->huggingface_hub) (14.3.3)
+Requirement already satisfied: annotated-doc>=0.0.2 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from typer->huggingface_hub) (0.0.4)
+Requirement already satisfied: markdown-it-py>=2.2.0 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from rich>=12.3.0->typer->huggingface_hub) (4.0.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from rich>=12.3.0->typer->huggingface_hub) (2.19.2)
+Requirement already satisfied: mdurl~=0.1 in /mnt/home/hsypfsv/.local/lib/python3.10/site-packages (from markdown-it-py>=2.2.0->rich>=12.3.0->typer->huggingface_hub) (0.1.2)
+Downloading accelerate-1.13.0-py3-none-any.whl (383 kB)
+Downloading datasets-4.8.5-py3-none-any.whl (528 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 529.0/529.0 kB 17.7 MB/s  0:00:00
+Downloading huggingface_hub-1.13.0-py3-none-any.whl (660 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 660.6/660.6 kB 21.1 MB/s  0:00:00
+Downloading hf_xet-1.4.3-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 44.7 MB/s  0:00:00
+Downloading evaluate-0.4.6-py3-none-any.whl (84 kB)
+Downloading peft-0.19.1-py3-none-any.whl (680 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 680.7/680.7 kB 21.6 MB/s  0:00:00
+Downloading sentence_transformers-5.4.1-py3-none-any.whl (571 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 571.3/571.3 kB 3.6 MB/s  0:00:00
+Downloading transformers-5.8.0-py3-none-any.whl (10.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.6/10.6 MB 45.0 MB/s  0:00:00
+Downloading tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 42.2 MB/s  0:00:00
+Downloading scikit_learn-1.7.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.7/9.7 MB 43.7 MB/s  0:00:00
+Downloading wandb-0.26.1-py3-none-manylinux_2_28_x86_64.whl (27.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 27.2/27.2 MB 32.7 MB/s  0:00:00
+Downloading joblib-1.5.3-py3-none-any.whl (309 kB)
+Downloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+WARNING: Error parsing dependencies of mlnx-tools: Invalid version: '-5.2.0-'
+Installing collected packages: threadpoolctl, joblib, hf-xet, scikit-learn, wandb, huggingface_hub, tokenizers, datasets, accelerate, transformers, evaluate, sentence-transformers, peft
+  Attempting uninstall: hf-xet
+    Found existing installation: hf-xet 1.4.2
+    Not uninstalling hf-xet at /mnt/home/hsypfsv/.local/lib/python3.10/site-packages, outside environment /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv
+    Can't uninstall 'hf-xet'. No files were found to uninstall.
+  Attempting uninstall: wandb
+    Found existing installation: wandb 0.25.1
+    Not uninstalling wandb at /mnt/home/hsypfsv/.local/lib/python3.10/site-packages, outside environment /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv
+    Can't uninstall 'wandb'. No files were found to uninstall.
+  Attempting uninstall: huggingface_hub
+    Found existing installation: huggingface_hub 0.36.2
+    Not uninstalling huggingface-hub at /mnt/home/hsypfsv/.local/lib/python3.10/site-packages, outside environment /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv
+    Can't uninstall 'huggingface_hub'. No files were found to uninstall.
+  Attempting uninstall: tokenizers
+    Found existing installation: tokenizers 0.20.3
+    Not uninstalling tokenizers at /mnt/home/hsypfsv/.local/lib/python3.10/site-packages, outside environment /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv
+    Can't uninstall 'tokenizers'. No files were found to uninstall.
+  Attempting uninstall: datasets
+    Found existing installation: datasets 3.1.0
+    Not uninstalling datasets at /mnt/home/hsypfsv/.local/lib/python3.10/site-packages, outside environment /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv
+    Can't uninstall 'datasets'. No files were found to uninstall.
+  Attempting uninstall: accelerate
+    Found existing installation: accelerate 1.0.1
+    Not uninstalling accelerate at /mnt/home/hsypfsv/.local/lib/python3.10/site-packages, outside environment /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv
+    Can't uninstall 'accelerate'. No files were found to uninstall.
+  Attempting uninstall: transformers
+    Found existing installation: transformers 4.46.1
+    Not uninstalling transformers at /mnt/home/hsypfsv/.local/lib/python3.10/site-packages, outside environment /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv
+    Can't uninstall 'transformers'. No files were found to uninstall.
+  Attempting uninstall: peft
+    Found existing installation: peft 0.12.0
+    Not uninstalling peft at /mnt/home/hsypfsv/.local/lib/python3.10/site-packages, outside environment /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv
+    Can't uninstall 'peft'. No files were found to uninstall.
+
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+llamafactory 0.9.1 requires accelerate<=1.0.1,>=0.34.0, but you have accelerate 1.13.0 which is incompatible.
+llamafactory 0.9.1 requires datasets<=3.1.0,>=2.16.0, but you have datasets 4.8.5 which is incompatible.
+llamafactory 0.9.1 requires peft<=0.12.0,>=0.11.1, but you have peft 0.19.1 which is incompatible.
+llamafactory 0.9.1 requires transformers<=4.46.1,>=4.41.2, but you have transformers 5.8.0 which is incompatible.
+Successfully installed accelerate-1.13.0 datasets-4.8.5 evaluate-0.4.6 hf-xet-1.4.3 huggingface_hub-1.13.0 joblib-1.5.3 peft-0.19.1 scikit-learn-1.7.2 sentence-transformers-5.4.1 threadpoolctl-3.6.0 tokenizers-0.22.2 transformers-5.8.0 wandb-0.26.1
+/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py:205: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+downloaded: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/source_data/train_bge_m3.jsonl
+downloaded: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/source_data/train_qwen3.jsonl
+============================================================
+H100 embedding training
+Script dir: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm
+Project dir: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning
+Data source dir: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/source_data
+Run dir: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/output/111642_20260506_013245_both_2gpu
+Model suite: both
+GPU count: 2
+Python: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/bin/python
+Docker image: <none>
+Start: Wed May  6 01:33:26 AM UTC 2026
+============================================================
+index, name, memory.total [MiB]
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/source_data/train_bge_m3.jsonl: train=47345, eval=5275
+/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/source_data/train_qwen3.jsonl: train=47345, eval=5275
+Missing train script: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py

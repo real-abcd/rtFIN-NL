@@ -1,0 +1,10 @@
+Error importing huggingface_hub.file_download: No module named 'tqdm'
+Traceback (most recent call last):
+  File "<stdin>", line 4, in <module>
+  File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/lib/python3.10/site-packages/huggingface_hub/__init__.py", line 1162, in __getattr__
+    submod = importlib.import_module(submod_path)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 16, in <module>
+    from tqdm.auto import tqdm as base_tqdm
+ModuleNotFoundError: No module named 'tqdm'
