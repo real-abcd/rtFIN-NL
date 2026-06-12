@@ -1,0 +1,36 @@
+services:
+  gemma31:
+    image: vllm/vllm-openai:v0.21.0
+    container_name: gemma31_fp8
+
+    runtime: nvidia
+    ipc: host
+
+    ports:
+      - "14959:14959"
+
+    volumes:
+      - ./gemma31:/model:ro
+
+    command: >
+      --model /model
+      --port 14959
+      --tensor-parallel-size 1
+      --gpu-memory-utilization 0.85
+      --max-model-len 8192
+      --max-num-seqs 4
+      --kv-cache-dtype turboquant_4bit_nc
+      --trust-remote-code
+
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1 # number of gpus / even number, use  with tensor-parallel option in command
+              capabilities: [gpu]
+
+    #for offline deployment    
+    environment:
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"

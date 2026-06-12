@@ -1,0 +1,84 @@
+INFO:__main__:Starting bge model training with SentenceTransformer...
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/modules.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/config_sentence_transformers.json "HTTP/1.1 200 OK"
+INFO:sentence_transformers.base.model:Loading SentenceTransformer model from dragonkue/BGE-m3-ko.
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/config_sentence_transformers.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/modules.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/sentence_bert_config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/config.json "HTTP/1.1 200 OK"
+Loading weights: 100%|██████████| 391/391 [00:00<00:00, 657.42it/s]
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/tokenizer_config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/tokenizer_config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/dragonkue/BGE-m3-ko/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/dragonkue/BGE-m3-ko/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/dragonkue/BGE-m3-ko "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/dragonkue/BGE-m3-ko "HTTP/1.1 200 OK"
+INFO:__main__:Set SentenceTransformer max_seq_length=512
+WARNING:sentence_transformers.base.training_args:The `warmup_ratio` argument is deprecated in Transformers v5+, and will also be removed from Sentence Transformers once support for Transformers v4 is dropped. Since you're using Transformers v5+, please use `warmup_steps` (as a float) to specify the warmup ratio instead.
+Traceback (most recent call last):
+  File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 607, in <module>
+    main()
+  File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 563, in main
+    trainer = train_bge_model(args)
+  File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 439, in train_bge_model
+    return train_sentence_transformer_model(args)
+  File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 392, in train_sentence_transformer_model
+    training_args = SentenceTransformerTrainingArguments(
+  File "<string>", line 120, in __init__
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/sentence_transformers/base/training_args.py", line 151, in __post_init__
+    super().__post_init__()
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/transformers/training_args.py", line 1624, in __post_init__
+    self.device
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/transformers/training_args.py", line 1912, in device
+    return self._setup_devices
+  File "/usr/lib/python3.10/functools.py", line 981, in __get__
+    val = self.func(instance)
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/transformers/training_args.py", line 1803, in _setup_devices
+    raise ImportError(
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=1.1.0`: Please run `pip install transformers[torch]` or `pip install 'accelerate>=1.1.0'`
+Traceback (most recent call last):
+  File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 607, in <module>
+    main()
+  File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 563, in main
+    trainer = train_bge_model(args)
+  File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 439, in train_bge_model
+    return train_sentence_transformer_model(args)
+  File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 392, in train_sentence_transformer_model
+    training_args = SentenceTransformerTrainingArguments(
+  File "<string>", line 120, in __init__
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/sentence_transformers/base/training_args.py", line 151, in __post_init__
+    super().__post_init__()
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/transformers/training_args.py", line 1624, in __post_init__
+    self.device
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/transformers/training_args.py", line 1912, in device
+    return self._setup_devices
+  File "/usr/lib/python3.10/functools.py", line 981, in __get__
+    val = self.func(instance)
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/transformers/training_args.py", line 1803, in _setup_devices
+    raise ImportError(
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=1.1.0`: Please run `pip install transformers[torch]` or `pip install 'accelerate>=1.1.0'`

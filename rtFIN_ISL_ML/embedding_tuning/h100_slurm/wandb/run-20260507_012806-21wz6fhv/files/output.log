@@ -1,0 +1,44 @@
+Loading weights: 100%|██████████| 398/398 [00:01<00:00, 203.46it/s]
+Batches: 100%|██████████| 90/90 [09:42<00:00,  6.47s/it]
+Batches: 100%|██████████| 15/15 [00:12<00:00,  1.20it/s]
+{
+  "corpus_size": 720,
+  "queries_evaluated": 114,
+  "mrr": 0.7677348252612847,
+  "map": 0.7677348252612847,
+  "hit@1": 0.6578947368421053,
+  "precision@1": 0.6578947368421053,
+  "recall@1": 0.6578947368421053,
+  "f1@1": 0.6578947368421053,
+  "ndcg@1": 0.6578947368421053,
+  "hit@3": 0.8771929824561403,
+  "precision@3": 0.2923976608187131,
+  "recall@3": 0.8771929824561403,
+  "f1@3": 0.43859649122807015,
+  "ndcg@3": 0.7870684720238136,
+  "hit@5": 0.9035087719298246,
+  "precision@5": 0.18070175438596456,
+  "recall@5": 0.9035087719298246,
+  "f1@5": 0.3011695906432746,
+  "ndcg@5": 0.7980176467903165,
+  "hit@10": 0.9298245614035088,
+  "precision@10": 0.09298245614035068,
+  "recall@10": 0.9298245614035088,
+  "f1@10": 0.1690590111642745,
+  "ndcg@10": 0.8068334836080979,
+  "hit@50": 0.9649122807017544,
+  "precision@50": 0.019298245614035103,
+  "recall@50": 0.9649122807017544,
+  "f1@50": 0.03783969728242168,
+  "ndcg@50": 0.8144679318903786
+}
+/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/benchmark_korean_embeddings.py:155: DeprecationWarning: MTEB is deprecated and will be removed in future versions. Please use the `mteb.evaluate` function instead.
+  evaluator = MTEB(tasks=tasks)
+/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/mteb/models/model_meta.py:764: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  embedding_dimensions = model.get_sentence_embedding_dimension()
+/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/mteb/models/model_meta.py:726: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  embed_dim=model.get_sentence_embedding_dimension(),
+─────────────────────────────── Selected tasks  ────────────────────────────────
+Retrieval
+    - MIRACLRetrieval, t2t, multilingual 1 / 18 Subsets
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.

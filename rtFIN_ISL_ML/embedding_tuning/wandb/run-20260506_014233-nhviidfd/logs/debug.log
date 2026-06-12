@@ -1,0 +1,21 @@
+2026-05-06 01:42:33,152 INFO    MainThread:2206540 [wandb_setup.py:_flush():81] Current SDK version is 0.26.1
+2026-05-06 01:42:33,152 INFO    MainThread:2206540 [wandb_setup.py:_flush():81] Configure stats pid to 2206540
+2026-05-06 01:42:33,152 INFO    MainThread:2206540 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-05-06 01:42:33,152 INFO    MainThread:2206540 [wandb_init.py:setup_run_log_directory():723] Logging user logs to /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/wandb/run-20260506_014233-nhviidfd/logs/debug.log
+2026-05-06 01:42:33,152 INFO    MainThread:2206540 [wandb_init.py:setup_run_log_directory():724] Logging internal logs to /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/wandb/run-20260506_014233-nhviidfd/logs/debug-internal.log
+2026-05-06 01:42:33,152 INFO    MainThread:2206540 [wandb_init.py:init():850] calling init triggers
+2026-05-06 01:42:33,152 INFO    MainThread:2206540 [wandb_init.py:init():855] wandb.init called with sweep_config: {}
+config: {'model_type': 'bge', 'model_name': 'dragonkue/BGE-m3-ko', 'train_data': '/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/output/111643_20260506_014201_both_2gpu/data/train_bge_m3.h100_train.jsonl', 'eval_data': '/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/output/111643_20260506_014201_both_2gpu/data/train_bge_m3.h100_eval.jsonl', 'output_dir': '/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/output/111643_20260506_014201_both_2gpu/bge', 'num_epochs': 3, 'batch_size': 16, 'learning_rate': 2e-05, 'warmup_ratio': 0.1, 'weight_decay': 0.01, 'gradient_accumulation_steps': 2, 'max_steps': -1, 'optim': 'adamw_torch', 'ddp_find_unused_parameters': None, 'fp16': False, 'bf16': True, 'wandb_project': 'rtfin_embedding_h100', 'wandb_run_name': 'h100_bge_111643_20260506_014201_both_2gpu', 'gradient_checkpointing': False, 'empty_cache_steps': 0, 'save_steps': 1000, 'save_total_limit': 3, 'eval_steps': 500, 'logging_steps': 50, 'eval_samples': 2000, 'realistic_eval': True, 'max_seq_length': 512, 'device': device(type='cuda', index=0), '_wandb': {}}
+2026-05-06 01:42:33,152 INFO    MainThread:2206540 [wandb_init.py:init():898] starting backend
+2026-05-06 01:42:33,409 INFO    MainThread:2206540 [wandb_init.py:init():913] sending inform_init request
+2026-05-06 01:42:33,896 INFO    MainThread:2206540 [wandb_init.py:init():918] backend started and connected
+2026-05-06 01:42:33,897 INFO    MainThread:2206540 [wandb_init.py:init():988] updated telemetry
+2026-05-06 01:42:33,898 INFO    MainThread:2206540 [wandb_init.py:init():1011] communicating run to backend with 90.0 second timeout
+2026-05-06 01:42:34,336 INFO    MainThread:2206540 [wandb_init.py:init():1056] starting run threads in backend
+2026-05-06 01:42:34,634 INFO    MainThread:2206540 [wandb_run.py:_console_start():2554] atexit reg
+2026-05-06 01:42:34,634 INFO    MainThread:2206540 [wandb_run.py:_redirect():2403] redirect: wrap_raw
+2026-05-06 01:42:34,634 INFO    MainThread:2206540 [wandb_run.py:_redirect():2472] Wrapping output streams.
+2026-05-06 01:42:34,634 INFO    MainThread:2206540 [wandb_run.py:_redirect():2495] Redirects installed.
+2026-05-06 01:42:34,636 INFO    MainThread:2206540 [wandb_init.py:init():1094] run started, returning control to user process
+2026-05-06 01:42:58,933 INFO    wandb-AsyncioManager-main:2206540 [service_client.py:_forward_responses():134] Reached EOF.
+2026-05-06 01:42:58,933 INFO    wandb-AsyncioManager-main:2206540 [mailbox.py:close():155] Closing mailbox, abandoning 1 handles.

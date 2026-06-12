@@ -1,0 +1,2 @@
+validating /mnt/cepheid/users/hsypfsv/KORAIL_MAINTENANCE/vllm021/docker-compose.yml: services.environment additional properties 'HF_HUB_OFFLINE', 'TRANSFORMERS_OFFLINE' not allowed
+validating /mnt/cepheid/users/hsypfsv/KORAIL_MAINTENANCE/vllm021/docker-compose.yml: services.environment additional properties 'HF_HUB_OFFLINE', 'TRANSFORMERS_OFFLINE' not allowed

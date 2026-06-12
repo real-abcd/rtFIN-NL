@@ -1,0 +1,162 @@
+INFO:__main__:Starting qwen model training with SentenceTransformer...
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-Embedding-4B/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-Embedding-4B/5cf2132abc99cad020ac570b19d031efec650f2b/modules.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-Embedding-4B/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-Embedding-4B/5cf2132abc99cad020ac570b19d031efec650f2b/config_sentence_transformers.json "HTTP/1.1 200 OK"
+INFO:sentence_transformers.base.model:Loading SentenceTransformer model from Qwen/Qwen3-Embedding-4B.
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-Embedding-4B/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-Embedding-4B/5cf2132abc99cad020ac570b19d031efec650f2b/config_sentence_transformers.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-Embedding-4B/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-Embedding-4B/5cf2132abc99cad020ac570b19d031efec650f2b/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-Embedding-4B/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-Embedding-4B/5cf2132abc99cad020ac570b19d031efec650f2b/modules.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-Embedding-4B/resolve/main/sentence_bert_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-Embedding-4B/resolve/main/sentence_roberta_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-Embedding-4B/resolve/main/sentence_distilbert_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-Embedding-4B/resolve/main/sentence_camembert_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-Embedding-4B/resolve/main/sentence_albert_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-Embedding-4B/resolve/main/sentence_xlm-roberta_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-Embedding-4B/resolve/main/sentence_xlnet_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-Embedding-4B/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-Embedding-4B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-Embedding-4B/5cf2132abc99cad020ac570b19d031efec650f2b/config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-Embedding-4B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-Embedding-4B/5cf2132abc99cad020ac570b19d031efec650f2b/config.json "HTTP/1.1 200 OK"
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 521.51it/s] 
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-Embedding-4B/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-Embedding-4B/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-Embedding-4B/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-Embedding-4B/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-Embedding-4B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-Embedding-4B/5cf2132abc99cad020ac570b19d031efec650f2b/tokenizer_config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-Embedding-4B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-Embedding-4B/5cf2132abc99cad020ac570b19d031efec650f2b/config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-Embedding-4B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-Embedding-4B/5cf2132abc99cad020ac570b19d031efec650f2b/config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-Embedding-4B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-Embedding-4B/5cf2132abc99cad020ac570b19d031efec650f2b/tokenizer_config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-Embedding-4B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-Embedding-4B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-Embedding-4B "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-Embedding-4B/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-Embedding-4B/5cf2132abc99cad020ac570b19d031efec650f2b/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-Embedding-4B "HTTP/1.1 200 OK"
+INFO:sentence_transformers.base.model:Loaded 1 prompt with these keys: ['query']
+INFO:__main__:Set SentenceTransformer max_seq_length=512
+WARNING:sentence_transformers.base.training_args:The `warmup_ratio` argument is deprecated in Transformers v5+, and will also be removed from Sentence Transformers once support for Transformers v4 is dropped. Since you're using Transformers v5+, please use `warmup_steps` (as a float) to specify the warmup ratio instead.
+WARNING:sentence_transformers.base.training_args:When using DistributedDataParallel (DDP), it is recommended to set `dataloader_drop_last=True` to avoid hanging issues with an uneven last batch. Setting `dataloader_drop_last=True`.
+Warning: The cache directory for DeepSpeed Triton autotune, /mnt/home/hsypfsv/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+INFO:root:x86_64-linux-gnu-gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -c /tmp/tmp_0emp2gt/test.c -o /tmp/tmp_0emp2gt/test.o
+INFO:root:x86_64-linux-gnu-gcc /tmp/tmp_0emp2gt/test.o -laio -o /tmp/tmp_0emp2gt/a.out
+INFO:root:x86_64-linux-gnu-gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -c /tmp/tmpfhs2jnqm/test.c -o /tmp/tmpfhs2jnqm/test.o
+INFO:root:x86_64-linux-gnu-gcc /tmp/tmpfhs2jnqm/test.o -L/usr/local/cuda -L/usr/local/cuda/lib64 -lcufile -o /tmp/tmpfhs2jnqm/a.out
+INFO:root:x86_64-linux-gnu-gcc -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -fPIC -c /tmp/tmp47p3k5bc/test.c -o /tmp/tmp47p3k5bc/test.o
+INFO:root:x86_64-linux-gnu-gcc /tmp/tmp47p3k5bc/test.o -laio -o /tmp/tmp47p3k5bc/a.out
+  0%|          | 0/1500 [00:00<?, ?it/s][transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+                                                    
+{'loss': '0.431', 'grad_norm': '15.56', 'learning_rate': '1.267e-06', 'epoch': '0.006759'}
+{'loss': '0.3954', 'grad_norm': '19.38', 'learning_rate': '2.6e-06', 'epoch': '0.01352'}
+{'loss': '0.3105', 'grad_norm': '20.88', 'learning_rate': '3.933e-06', 'epoch': '0.02028'}
+{'loss': '0.2358', 'grad_norm': '12.62', 'learning_rate': '5.267e-06', 'epoch': '0.02704'}
+{'loss': '0.1878', 'grad_norm': '27', 'learning_rate': '6.6e-06', 'epoch': '0.0338'}
+{'loss': '0.1926', 'grad_norm': '10.62', 'learning_rate': '7.933e-06', 'epoch': '0.04055'}
+{'loss': '0.1607', 'grad_norm': '10.62', 'learning_rate': '9.267e-06', 'epoch': '0.04731'}
+{'loss': '0.1542', 'grad_norm': '15.56', 'learning_rate': '9.933e-06', 'epoch': '0.05407'}
+{'loss': '0.1826', 'grad_norm': '16.38', 'learning_rate': '9.785e-06', 'epoch': '0.06083'}
+{'loss': '0.1807', 'grad_norm': '16', 'learning_rate': '9.637e-06', 'epoch': '0.06759'}
+{'loss': '0.1551', 'grad_norm': '11', 'learning_rate': '9.489e-06', 'epoch': '0.07435'}
+{'loss': '0.1624', 'grad_norm': '2.438', 'learning_rate': '9.341e-06', 'epoch': '0.08111'}
+{'loss': '0.1318', 'grad_norm': '14.75', 'learning_rate': '9.193e-06', 'epoch': '0.08787'}
+{'loss': '0.1342', 'grad_norm': '12.38', 'learning_rate': '9.044e-06', 'epoch': '0.09463'}
+{'loss': '0.1418', 'grad_norm': '8.125', 'learning_rate': '8.896e-06', 'epoch': '0.1014'}
+{'loss': '0.1146', 'grad_norm': '12.94', 'learning_rate': '8.748e-06', 'epoch': '0.1081'}
+{'loss': '0.1501', 'grad_norm': '13', 'learning_rate': '8.6e-06', 'epoch': '0.1149'}
+{'loss': '0.1369', 'grad_norm': '6.594', 'learning_rate': '8.452e-06', 'epoch': '0.1217'}
+{'loss': '0.1284', 'grad_norm': '10.56', 'learning_rate': '8.304e-06', 'epoch': '0.1284'}
+{'loss': '0.1464', 'grad_norm': '8.625', 'learning_rate': '8.156e-06', 'epoch': '0.1352'}
+{'loss': '0.0948', 'grad_norm': '4.469', 'learning_rate': '8.007e-06', 'epoch': '0.1419'}
+{'loss': '0.1137', 'grad_norm': '10', 'learning_rate': '7.859e-06', 'epoch': '0.1487'}
+{'loss': '0.1163', 'grad_norm': '14.62', 'learning_rate': '7.711e-06', 'epoch': '0.1555'}
+{'loss': '0.1569', 'grad_norm': '10.19', 'learning_rate': '7.563e-06', 'epoch': '0.1622'}
+{'loss': '0.1585', 'grad_norm': '20.25', 'learning_rate': '7.415e-06', 'epoch': '0.169'}
+{'loss': '0.1224', 'grad_norm': '9', 'learning_rate': '7.267e-06', 'epoch': '0.1757'}
+{'loss': '0.1374', 'grad_norm': '8.562', 'learning_rate': '7.119e-06', 'epoch': '0.1825'}
+{'loss': '0.1264', 'grad_norm': '8.75', 'learning_rate': '6.97e-06', 'epoch': '0.1893'}
+{'loss': '0.1124', 'grad_norm': '10.25', 'learning_rate': '6.822e-06', 'epoch': '0.196'}
+{'loss': '0.09718', 'grad_norm': '7.344', 'learning_rate': '6.674e-06', 'epoch': '0.2028'}
+{'loss': '0.1421', 'grad_norm': '3.281', 'learning_rate': '6.526e-06', 'epoch': '0.2095'}
+{'loss': '0.1336', 'grad_norm': '7.5', 'learning_rate': '6.378e-06', 'epoch': '0.2163'}
+{'loss': '0.08629', 'grad_norm': '6.625', 'learning_rate': '6.23e-06', 'epoch': '0.223'}
+{'loss': '0.1137', 'grad_norm': '17', 'learning_rate': '6.081e-06', 'epoch': '0.2298'}
+{'loss': '0.1232', 'grad_norm': '10.94', 'learning_rate': '5.933e-06', 'epoch': '0.2366'}
+{'loss': '0.08101', 'grad_norm': '5.469', 'learning_rate': '5.785e-06', 'epoch': '0.2433'}
+{'loss': '0.1078', 'grad_norm': '3.984', 'learning_rate': '5.637e-06', 'epoch': '0.2501'}
+{'loss': '0.1088', 'grad_norm': '7.25', 'learning_rate': '5.489e-06', 'epoch': '0.2568'}
+{'loss': '0.1255', 'grad_norm': '1.109', 'learning_rate': '5.341e-06', 'epoch': '0.2636'}
+{'loss': '0.1031', 'grad_norm': '2.578', 'learning_rate': '5.193e-06', 'epoch': '0.2704'}
+{'loss': '0.119', 'grad_norm': '7.906', 'learning_rate': '5.044e-06', 'epoch': '0.2771'}
+{'loss': '0.1143', 'grad_norm': '4.125', 'learning_rate': '4.896e-06', 'epoch': '0.2839'}
+{'loss': '0.145', 'grad_norm': '14.94', 'learning_rate': '4.748e-06', 'epoch': '0.2906'}
+{'loss': '0.1135', 'grad_norm': '17', 'learning_rate': '4.6e-06', 'epoch': '0.2974'}
+{'loss': '0.1071', 'grad_norm': '3.438', 'learning_rate': '4.452e-06', 'epoch': '0.3042'}
+{'loss': '0.1041', 'grad_norm': '1.758', 'learning_rate': '4.304e-06', 'epoch': '0.3109'}
+{'loss': '0.06871', 'grad_norm': '5.594', 'learning_rate': '4.156e-06', 'epoch': '0.3177'}
+{'loss': '0.1048', 'grad_norm': '8.5', 'learning_rate': '4.007e-06', 'epoch': '0.3244'}
+{'loss': '0.1008', 'grad_norm': '7.281', 'learning_rate': '3.859e-06', 'epoch': '0.3312'}
+{'loss': '0.1171', 'grad_norm': '4.312', 'learning_rate': '3.711e-06', 'epoch': '0.338'}
+INFO:sentence_transformers.base.model:Saving model to /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/output/111677_20260506_114341_both_2gpu/qwen/checkpoint-1000
+Writing model shards: 100%|██████████| 1/1 [00:10<00:00, 10.49s/it]
+100%|██████████| 1500/1500 [1:30:39<00:00,  3.66s/it]INFO:sentence_transformers.base.trainer:Saving model checkpoint to /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/output/111677_20260506_114341_both_2gpu/qwen/checkpoint-1500
+{'loss': '0.06622', 'grad_norm': '2.266', 'learning_rate': '3.563e-06', 'epoch': '0.3447'}
+{'loss': '0.08053', 'grad_norm': '7.75', 'learning_rate': '3.415e-06', 'epoch': '0.3515'}
+{'loss': '0.1083', 'grad_norm': '1.469', 'learning_rate': '3.267e-06', 'epoch': '0.3582'}
+{'loss': '0.1046', 'grad_norm': '12', 'learning_rate': '3.119e-06', 'epoch': '0.365'}
+{'loss': '0.1543', 'grad_norm': '12', 'learning_rate': '2.97e-06', 'epoch': '0.3717'}
+{'loss': '0.1265', 'grad_norm': '10.56', 'learning_rate': '2.822e-06', 'epoch': '0.3785'}
+{'loss': '0.1413', 'grad_norm': '3.938', 'learning_rate': '2.674e-06', 'epoch': '0.3853'}
+{'loss': '0.09836', 'grad_norm': '0.9883', 'learning_rate': '2.526e-06', 'epoch': '0.392'}
+{'loss': '0.06282', 'grad_norm': '4.625', 'learning_rate': '2.378e-06', 'epoch': '0.3988'}
+{'loss': '0.1078', 'grad_norm': '9.875', 'learning_rate': '2.23e-06', 'epoch': '0.4055'}
+{'loss': '0.08692', 'grad_norm': '3.375', 'learning_rate': '2.081e-06', 'epoch': '0.4123'}
+{'loss': '0.08117', 'grad_norm': '11', 'learning_rate': '1.933e-06', 'epoch': '0.4191'}
+{'loss': '0.09232', 'grad_norm': '2.375', 'learning_rate': '1.785e-06', 'epoch': '0.4258'}
+{'loss': '0.1379', 'grad_norm': '10.88', 'learning_rate': '1.637e-06', 'epoch': '0.4326'}
+{'loss': '0.1041', 'grad_norm': '4.031', 'learning_rate': '1.489e-06', 'epoch': '0.4393'}
+{'loss': '0.1034', 'grad_norm': '16.88', 'learning_rate': '1.341e-06', 'epoch': '0.4461'}
+{'loss': '0.09211', 'grad_norm': '14.12', 'learning_rate': '1.193e-06', 'epoch': '0.4529'}
+{'loss': '0.08873', 'grad_norm': '1.312', 'learning_rate': '1.044e-06', 'epoch': '0.4596'}
+{'loss': '0.1143', 'grad_norm': '9', 'learning_rate': '8.963e-07', 'epoch': '0.4664'}
+{'loss': '0.1106', 'grad_norm': '3.375', 'learning_rate': '7.481e-07', 'epoch': '0.4731'}
+{'loss': '0.1058', 'grad_norm': '17.25', 'learning_rate': '6e-07', 'epoch': '0.4799'}
+{'loss': '0.06984', 'grad_norm': '15.38', 'learning_rate': '4.519e-07', 'epoch': '0.4867'}
+{'loss': '0.08572', 'grad_norm': '3.172', 'learning_rate': '3.037e-07', 'epoch': '0.4934'}
+{'loss': '0.112', 'grad_norm': '10.06', 'learning_rate': '1.556e-07', 'epoch': '0.5002'}
+{'loss': '0.1012', 'grad_norm': '11.06', 'learning_rate': '7.407e-09', 'epoch': '0.5069'}
+INFO:sentence_transformers.base.model:Saving model to /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/output/111677_20260506_114341_both_2gpu/qwen/checkpoint-1500
+Writing model shards: 100%|██████████| 1/1 [00:11<00:00, 11.84s/it]
+100%|██████████| 1500/1500 [1:30:51<00:00,  3.63s/it]00, 11.84s/it]
+{'train_runtime': '5452', 'train_samples_per_second': '4.402', 'train_steps_per_second': '0.275', 'train_loss': '0.131', 'epoch': '0.5069'}
+INFO:sentence_transformers.base.model:Saving model to /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/output/111677_20260506_114341_both_2gpu/qwen
+Writing model shards: 100%|██████████| 1/1 [00:12<00:00, 12.45s/it]
+INFO:__main__:Model saved to /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/output/111677_20260506_114341_both_2gpu/qwen
+INFO:__main__:Training completed successfully!
+INFO:__main__:Running post-training benchmarking...
+INFO:__main__:Benchmarking qwen model: Qwen/Qwen3-Embedding-4B
+INFO:__main__:Evaluating qwen model with 1000 documents
+INFO:__main__:Encoding 1388 documents...
+INFO:__main__:Realistic evaluation results: {'corpus_size': 1388, 'queries_evaluated': 976, 'top1_accuracy': 0.0, 'top5_accuracy': 0.6905737704918032, 'top10_accuracy': 0.7704918032786885, 'mean_reciprocal_rank': 0.15444472483160984, 'avg_positive_similarity': 0.3950148591052237}
+INFO:__main__:Evaluation results saved to /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/output/111677_20260506_114341_both_2gpu/qwen/eval_results_qwen.json
+
+============================================================
+Model: Qwen/Qwen3-Embedding-4B (qwen)
+Evaluation: Realistic
+Corpus Size: 1388
+Queries Evaluated: 976
+Average Positive Similarity: 0.3950148591052237
+Top-1 Accuracy: 0.0
+Top-5 Accuracy: 0.6905737704918032
+Top-10 Accuracy: 0.7704918032786885
+Mean Reciprocal Rank: 0.15444472483160984
+============================================================

@@ -1,0 +1,23 @@
+exists: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/source_data/train_bge_m3.jsonl
+exists: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/source_data/train_qwen3.jsonl
+============================================================
+H100 embedding training
+Script dir: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm
+Project dir: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning
+Data source dir: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/source_data
+Run dir: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/output/111647_20260506_014828_both_2gpu
+Model suite: both
+GPU count: 2
+Python: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/bin/python
+Docker image: <none>
+Start: Wed May  6 01:48:28 UTC 2026
+============================================================
+index, name, memory.total [MiB]
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/source_data/train_bge_m3.jsonl: train=47345, eval=5275
+/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/source_data/train_qwen3.jsonl: train=47345, eval=5275
+============================================================
+Training BGE: dragonkue/BGE-m3-ko
+============================================================
+/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/bin/python: Error while finding module specification for 'torch.distributed.run' (ModuleNotFoundError: No module named 'torch')

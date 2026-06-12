@@ -1,0 +1,64 @@
+INFO:__main__:Starting qwen model training with SentenceTransformer...
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: Qwen/Qwen3-Embedding-4B
+Traceback (most recent call last):
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1034, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 736, in __getitem__
+    raise KeyError(key)
+KeyError: 'qwen3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 607, in <module>
+    main()
+  File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 566, in main
+    trainer = train_qwen_model(args)
+  File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 443, in train_qwen_model
+    return train_sentence_transformer_model(args)
+  File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 365, in train_sentence_transformer_model
+    model = create_sentence_transformers_model(
+  File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 327, in create_sentence_transformers_model
+    model = SentenceTransformer(
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/sentence_transformers/SentenceTransformer.py", line 308, in __init__
+    modules, self.module_kwargs = self._load_sbert_model(
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/sentence_transformers/SentenceTransformer.py", line 1728, in _load_sbert_model
+    module = module_class(model_name_or_path, cache_dir=cache_folder, backend=self.backend, **kwargs)
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/sentence_transformers/models/Transformer.py", line 77, in __init__
+    config = self._load_config(model_name_or_path, cache_dir, backend, config_args)
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/sentence_transformers/models/Transformer.py", line 128, in _load_config
+    return AutoConfig.from_pretrained(model_name_or_path, **config_args, cache_dir=cache_dir)
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1036, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `qwen3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+Traceback (most recent call last):
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1034, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 736, in __getitem__
+    raise KeyError(key)
+KeyError: 'qwen3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 607, in <module>
+    main()
+  File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 566, in main
+    trainer = train_qwen_model(args)
+  File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 443, in train_qwen_model
+    return train_sentence_transformer_model(args)
+  File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 365, in train_sentence_transformer_model
+    model = create_sentence_transformers_model(
+  File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 327, in create_sentence_transformers_model
+    model = SentenceTransformer(
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/sentence_transformers/SentenceTransformer.py", line 308, in __init__
+    modules, self.module_kwargs = self._load_sbert_model(
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/sentence_transformers/SentenceTransformer.py", line 1728, in _load_sbert_model
+    module = module_class(model_name_or_path, cache_dir=cache_folder, backend=self.backend, **kwargs)
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/sentence_transformers/models/Transformer.py", line 77, in __init__
+    config = self._load_config(model_name_or_path, cache_dir, backend, config_args)
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/sentence_transformers/models/Transformer.py", line 128, in _load_config
+    return AutoConfig.from_pretrained(model_name_or_path, **config_args, cache_dir=cache_dir)
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1036, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `qwen3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.

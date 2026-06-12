@@ -1,0 +1,160 @@
+INFO:__main__:Starting bge model training with SentenceTransformer...
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/modules.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/config_sentence_transformers.json "HTTP/1.1 200 OK"
+INFO:sentence_transformers.base.model:Loading SentenceTransformer model from dragonkue/BGE-m3-ko.
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/config_sentence_transformers.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/README.md "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/modules.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/sentence_bert_config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+Loading weights: 100%|██████████| 391/391 [00:01<00:00, 385.40it/s]
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/tokenizer_config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/tokenizer_config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/tokenizer_config.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/dragonkue/BGE-m3-ko/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/dragonkue/BGE-m3-ko/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/sentencepiece.bpe.model "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/tokenizer.json "HTTP/1.1 302 Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/dragonkue/BGE-m3-ko/xet-read-token/7074d66aa46562342193ca4feb3d89bf9dad71b4 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/added_tokens.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/special_tokens_map.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/special_tokens_map.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/chat_template.jinja "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/dragonkue/BGE-m3-ko "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/dragonkue/BGE-m3-ko/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/dragonkue/BGE-m3-ko/7074d66aa46562342193ca4feb3d89bf9dad71b4/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/dragonkue/BGE-m3-ko "HTTP/1.1 200 OK"
+INFO:__main__:Set SentenceTransformer max_seq_length=512
+WARNING:sentence_transformers.base.training_args:The `warmup_ratio` argument is deprecated in Transformers v5+, and will also be removed from Sentence Transformers once support for Transformers v4 is dropped. Since you're using Transformers v5+, please use `warmup_steps` (as a float) to specify the warmup ratio instead.
+WARNING:sentence_transformers.base.training_args:When using DistributedDataParallel (DDP), it is recommended to set `dataloader_drop_last=True` to avoid hanging issues with an uneven last batch. Setting `dataloader_drop_last=True`.
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 607, in <module>
+[rank0]:     main()
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 563, in main
+[rank0]:     trainer = train_bge_model(args)
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 439, in train_bge_model
+[rank0]:     return train_sentence_transformer_model(args)
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 423, in train_sentence_transformer_model
+[rank0]:     trainer = SentenceTransformerTrainer(
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/lib/python3.10/site-packages/sentence_transformers/util/decorators.py", line 41, in wrapper
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/lib/python3.10/site-packages/sentence_transformers/sentence_transformer/trainer.py", line 138, in __init__
+[rank0]:     super().__init__(
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/lib/python3.10/site-packages/sentence_transformers/util/decorators.py", line 41, in wrapper
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/lib/python3.10/site-packages/sentence_transformers/base/trainer.py", line 243, in __init__
+[rank0]:     super().__init__(
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/lib/python3.10/site-packages/transformers/trainer.py", line 491, in __init__
+[rank0]:     unwrapped_model = unwrap_peft_model(self.accelerator.unwrap_model(model))
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/lib/python3.10/site-packages/accelerate/accelerator.py", line 3232, in unwrap_model
+[rank0]:     return extract_model_from_parallel(model, keep_fp32_wrapper, keep_torch_compile)
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/lib/python3.10/site-packages/accelerate/utils/other.py", line 258, in extract_model_from_parallel
+[rank0]:     from deepspeed import DeepSpeedEngine
+[rank0]:   File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/deepspeed/__init__.py", line 25, in <module>
+[rank0]:     from . import ops
+[rank0]:   File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/deepspeed/ops/__init__.py", line 6, in <module>
+[rank0]:     from . import adam
+[rank0]:   File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/deepspeed/ops/adam/__init__.py", line 6, in <module>
+[rank0]:     from .cpu_adam import DeepSpeedCPUAdam
+[rank0]:   File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/deepspeed/ops/adam/cpu_adam.py", line 8, in <module>
+[rank0]:     from deepspeed.utils import logger
+[rank0]:   File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/deepspeed/utils/__init__.py", line 10, in <module>
+[rank0]:     from .groups import *
+[rank0]:   File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/deepspeed/utils/groups.py", line 28, in <module>
+[rank0]:     from deepspeed import comm as dist
+[rank0]:   File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/deepspeed/comm/__init__.py", line 7, in <module>
+[rank0]:     from .comm import *
+[rank0]:   File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/deepspeed/comm/comm.py", line 32, in <module>
+[rank0]:     from deepspeed.comm.ccl import CCLBackend
+[rank0]:   File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/deepspeed/comm/ccl.py", line 11, in <module>
+[rank0]:     from deepspeed.ops.op_builder import NotImplementedBuilder
+[rank0]:   File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/deepspeed/ops/op_builder/__init__.py", line 11, in <module>
+[rank0]:     from .builder import get_default_compute_capabilities, OpBuilder
+[rank0]:   File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/deepspeed/ops/op_builder/builder.py", line 16, in <module>
+[rank0]:     import distutils.ccompiler
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/lib/python3.10/site-packages/setuptools/_distutils/ccompiler.py", line 1, in <module>
+[rank0]:     from .compat.numpy import (  # noqa: F401
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/lib/python3.10/site-packages/setuptools/_distutils/compat/numpy.py", line 2, in <module>
+[rank0]:     from ..compilers.C.base import _default_compilers, compiler_class  # noqa: F401
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/lib/python3.10/site-packages/setuptools/_distutils/compilers/C/base.py", line 26, in <module>
+[rank0]:     from ..._modified import newer_group
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/lib/python3.10/site-packages/setuptools/_distutils/_modified.py", line 10, in <module>
+[rank0]:     from jaraco.functools import splat
+[rank0]: ImportError: cannot import name 'splat' from 'jaraco.functools' (/usr/lib/python3/dist-packages/jaraco/functools.py)
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 607, in <module>
+[rank0]:     main()
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 563, in main
+[rank0]:     trainer = train_bge_model(args)
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 439, in train_bge_model
+[rank0]:     return train_sentence_transformer_model(args)
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 423, in train_sentence_transformer_model
+[rank0]:     trainer = SentenceTransformerTrainer(
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/lib/python3.10/site-packages/sentence_transformers/util/decorators.py", line 41, in wrapper
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/lib/python3.10/site-packages/sentence_transformers/sentence_transformer/trainer.py", line 138, in __init__
+[rank0]:     super().__init__(
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/lib/python3.10/site-packages/sentence_transformers/util/decorators.py", line 41, in wrapper
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/lib/python3.10/site-packages/sentence_transformers/base/trainer.py", line 243, in __init__
+[rank0]:     super().__init__(
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/lib/python3.10/site-packages/transformers/trainer.py", line 491, in __init__
+[rank0]:     unwrapped_model = unwrap_peft_model(self.accelerator.unwrap_model(model))
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/lib/python3.10/site-packages/accelerate/accelerator.py", line 3232, in unwrap_model
+[rank0]:     return extract_model_from_parallel(model, keep_fp32_wrapper, keep_torch_compile)
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/lib/python3.10/site-packages/accelerate/utils/other.py", line 258, in extract_model_from_parallel
+[rank0]:     from deepspeed import DeepSpeedEngine
+[rank0]:   File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/deepspeed/__init__.py", line 25, in <module>
+[rank0]:     from . import ops
+[rank0]:   File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/deepspeed/ops/__init__.py", line 6, in <module>
+[rank0]:     from . import adam
+[rank0]:   File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/deepspeed/ops/adam/__init__.py", line 6, in <module>
+[rank0]:     from .cpu_adam import DeepSpeedCPUAdam
+[rank0]:   File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/deepspeed/ops/adam/cpu_adam.py", line 8, in <module>
+[rank0]:     from deepspeed.utils import logger
+[rank0]:   File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/deepspeed/utils/__init__.py", line 10, in <module>
+[rank0]:     from .groups import *
+[rank0]:   File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/deepspeed/utils/groups.py", line 28, in <module>
+[rank0]:     from deepspeed import comm as dist
+[rank0]:   File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/deepspeed/comm/__init__.py", line 7, in <module>
+[rank0]:     from .comm import *
+[rank0]:   File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/deepspeed/comm/comm.py", line 32, in <module>
+[rank0]:     from deepspeed.comm.ccl import CCLBackend
+[rank0]:   File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/deepspeed/comm/ccl.py", line 11, in <module>
+[rank0]:     from deepspeed.ops.op_builder import NotImplementedBuilder
+[rank0]:   File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/deepspeed/ops/op_builder/__init__.py", line 11, in <module>
+[rank0]:     from .builder import get_default_compute_capabilities, OpBuilder
+[rank0]:   File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/deepspeed/ops/op_builder/builder.py", line 16, in <module>
+[rank0]:     import distutils.ccompiler
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/lib/python3.10/site-packages/setuptools/_distutils/ccompiler.py", line 1, in <module>
+[rank0]:     from .compat.numpy import (  # noqa: F401
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/lib/python3.10/site-packages/setuptools/_distutils/compat/numpy.py", line 2, in <module>
+[rank0]:     from ..compilers.C.base import _default_compilers, compiler_class  # noqa: F401
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/lib/python3.10/site-packages/setuptools/_distutils/compilers/C/base.py", line 26, in <module>
+[rank0]:     from ..._modified import newer_group
+[rank0]:   File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/venv/lib/python3.10/site-packages/setuptools/_distutils/_modified.py", line 10, in <module>
+[rank0]:     from jaraco.functools import splat
+[rank0]: ImportError: cannot import name 'splat' from 'jaraco.functools' (/usr/lib/python3/dist-packages/jaraco/functools.py)

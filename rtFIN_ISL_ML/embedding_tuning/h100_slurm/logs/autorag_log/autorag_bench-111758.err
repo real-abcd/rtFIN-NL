@@ -1,0 +1,26 @@
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 9528.48it/s]
+Traceback (most recent call last):
+  File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/benchmark_korean_embeddings.py", line 160, in <module>
+    main()
+  File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/benchmark_korean_embeddings.py", line 149, in main
+    model = SentenceTransformer(args.model_path, device=device, trust_remote_code=True)
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/sentence_transformers/util/decorators.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/sentence_transformers/sentence_transformer/model.py", line 183, in __init__
+    super().__init__(
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/sentence_transformers/base/model.py", line 230, in __init__
+    self.to(device)
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1381, in to
+    return self._apply(convert)
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 933, in _apply
+    module._apply(fn)
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 933, in _apply
+    module._apply(fn)
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 933, in _apply
+    module._apply(fn)
+  [Previous line repeated 3 more times]
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 964, in _apply
+    param_applied = fn(param)
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1367, in convert
+    return t.to(
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 48.00 MiB. GPU 0 has a total capacity of 79.18 GiB of which 14.69 MiB is free. Process 1098620 has 74.78 GiB memory in use. Including non-PyTorch memory, this process has 4.37 GiB memory in use. Of the allocated memory 3.85 GiB is allocated by PyTorch, and 13.28 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

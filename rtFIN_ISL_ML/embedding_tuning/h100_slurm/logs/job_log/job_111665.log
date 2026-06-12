@@ -1,0 +1,74 @@
+exists: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/source_data/train_bge_m3.jsonl
+exists: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/source_data/train_qwen3.jsonl
+============================================================
+H100 embedding training
+Script dir: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm
+Project dir: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning
+Data source dir: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/source_data
+Run dir: /mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/output/111665_20260506_020009_both_2gpu
+Model suite: both
+GPU count: 2
+Python: /usr/bin/python3
+Docker image: <none>
+Start: Wed May  6 02:00:10 UTC 2026
+============================================================
+index, name, memory.total [MiB]
+0, NVIDIA H100 80GB HBM3, 81559 MiB
+1, NVIDIA H100 80GB HBM3, 81559 MiB
+/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/source_data/train_bge_m3.jsonl: train=47345, eval=5275
+/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/h100_slurm/source_data/train_qwen3.jsonl: train=47345, eval=5275
+============================================================
+Training BGE: dragonkue/BGE-m3-ko
+============================================================
+
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Traceback (most recent call last):
+  File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 31, in <module>
+Traceback (most recent call last):
+  File "/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py", line 31, in <module>
+    from sentence_transformers import SentenceTransformer, losses, evaluation
+ModuleNotFoundError: No module named 'sentence_transformers'
+    from sentence_transformers import SentenceTransformer, losses, evaluation
+ModuleNotFoundError: No module named 'sentence_transformers'
+E0506 02:00:29.243000 841399 torch/distributed/elastic/multiprocessing/api.py:984] failed (exitcode: 1) local_rank: 0 (pid: 841442) of binary: /usr/bin/python3
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/torch/distributed/run.py", line 995, in <module>
+    main()
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/torch/distributed/run.py", line 991, in main
+    run(args)
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/torch/distributed/run.py", line 982, in run
+    elastic_launch(
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/mnt/home/hsypfsv/.local/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/mnt/cepheid/users/hsypfsv/rtFIN_ISL_ML/embedding_tuning/train_embedding.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-05-06_02:00:29
+  host      : DGX-H100-11
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 841443)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-05-06_02:00:29
+  host      : DGX-H100-11
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 841442)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

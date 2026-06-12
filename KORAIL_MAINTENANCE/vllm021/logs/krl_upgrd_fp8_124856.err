@@ -1,0 +1,23 @@
+ Container gemma31_fp8  Stopping
+ Container gemma31_fp8  Stopped
+ Container gemma31_fp8  Removing
+ Container gemma31_fp8  Removed
+ Network vllm021_default  Removing
+ Network vllm021_default  Removed
+ Network vllm021_default  Creating
+ Network vllm021_default  Created
+ Container gemma31_fp8  Creating
+ Container gemma31_fp8  Created
+ Container gemma31_fp8  Starting
+ Container gemma31_fp8  Started
+(EngineCore pid=487) Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
+(EngineCore pid=487) Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:16<00:16, 16.91s/it]
+(EngineCore pid=487) Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:23<00:00, 10.64s/it]
+(EngineCore pid=487) Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:23<00:00, 11.58s/it]
+(EngineCore pid=487) 
+(EngineCore pid=487) Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   0%|          | 0/4 [00:00<?, ?it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  50%|█████     | 2/4 [00:00<00:00, 17.85it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 4/4 [00:00<00:00, 17.73it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 4/4 [00:00<00:00, 17.74it/s]
+(EngineCore pid=487) Capturing CUDA graphs (decode, FULL):   0%|          | 0/3 [00:00<?, ?it/s]Capturing CUDA graphs (decode, FULL): 100%|██████████| 3/3 [00:01<00:00,  1.66it/s]Capturing CUDA graphs (decode, FULL): 100%|██████████| 3/3 [00:01<00:00,  1.66it/s]
+(APIServer pid=1) INFO:     Started server process [1]
+(APIServer pid=1) INFO:     Waiting for application startup.
+(APIServer pid=1) INFO:     Application startup complete.
+slurmstepd: error: *** JOB 124856 ON DGX-H100-12 CANCELLED AT 2026-06-11T13:09:22 ***
